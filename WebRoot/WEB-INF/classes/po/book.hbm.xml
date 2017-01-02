@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="po.Book" table="BOOK">
+		<id name="NO" column="NO">
+			<generator class="sequence">
+				<param name="sequence">bookseq</param>
+			</generator>
+		</id>
+		<property name="NAME">
+			<column name="NAME" not-null="true"/>
+		</property>
+		<property name="DISC">
+			<column name="DISC"/>
+		</property>
+		<property name="PRICE">
+			<column name="PRICE"/>
+		</property>
+		<property name="PIC">
+			<column name="PIC"/>
+		</property>
+		<property name="NUM">
+			<column name="NUM"/>
+		</property>
+	</class>
+</hibernate-mapping>

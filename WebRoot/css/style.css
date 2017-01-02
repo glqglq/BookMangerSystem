@@ -1,0 +1,66 @@
+/*[for all]*/
+*{
+	margin: 0;
+	padding: 0;
+	overfolow: hidden;
+}
+
+.form-div {
+	position: absolute;
+	margin-top: 10%;
+	margin-left: 20%;
+	overfolow: hidden;
+}
+
+.form-div fieldset {
+	padding: 40px;
+	overfolow: hidden;
+}
+
+.form-div span {
+	display: inline-block;
+	vertical-align: top;
+	width: 60px;
+	line-height: 35px;
+	overfolow: hidden;
+}
+
+.form-div input {
+	margin-bottom: 15px;
+	width: 200px;
+	height: 35px;
+	overfolow: hidden;
+}
+
+.form-div textarea {
+	margin-bottom: 15px;
+	overfolow: hidden;
+}
+
+.form-div .btn-3 {
+	width: 100%;
+	overfolow: hidden;
+}
+
+.form-div .input-btn {
+	width: 40%;
+	overfolow: hidden;
+}
+
+/*[for login]*/
+.form-div .btn-1 {
+	float: left;
+	overfolow: hidden;
+}
+
+.form-div .btn-2 {
+	float: right;
+	overfolow: hidden;
+}
+
+/*[for UpdateBook]*/
+.more-width {
+	width: 400px;
+	overfolow: hidden;
+}
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="main" extends="struts-default">
+<!-- 		<interceptors>-->
+<!--            <interceptor name="logininterceptor" class="Controller.LoginFilter"/>-->
+<!--            <interceptor-stack name="teamwareStack">-->
+<!--                <interceptor-ref name="logininterceptor"/>-->
+<!--                <interceptor-ref name="defaultStack"/>-->
+<!--            </interceptor-stack>-->
+<!--		</interceptors>-->
+<!--		<default-interceptor-ref name="teamwareStack"></default-interceptor-ref>-->
+        
+        <global-results>
+  			<result name="error">/ListBook.action</result>
+  		</global-results>
+    	<action name="login" class="Controller.Login" method="execute">
+        	<result name="success" type= "redirectAction">/ListBook.action</result>
+        	<result name="fail">/error.html</result>
+    	</action>
+    	<action name="regist" class="Controller.Regist" method="execute">
+        	<result name="success" type= "redirectAction">/ListBook.action</result>
+        	<result name="fail">/error.html</result>
+    	</action>
+    	<action name="ModifyPassword" class="Controller.ModifyPassword" method="execute">
+        	<result name="success">/login.jsp</result>
+        	<result name="fail">/error.html</result>
+    	</action>
+    	<action name="ListBook" class="Controller.ListBook" method="execute">
+        	<result name="success">/BookList.jsp</result>
+        	<result name="fail">/error.html</result>
+    	</action>
+    	<action name="addbook" class="Controller.AddBook" method="execute">
+        	<result name="success" type= "redirectAction">ListBook.action</result>
+        	<result name="fail">/error.html</result>
+    	</action>
+    	<action name="Delete" class="Controller.DelBook" method="execute">
+        	<result name="success" type= "redirectAction">ListBook.action</result>
+        	<result name="fail">/error.html</result>
+    	</action>
+    	<action name="UpdateBook" class="Controller.UpdateBook" method="execute">
+        	<result name="success" type= "redirectAction">ListBook.action</result>
+        	<result name="fail">/error.html</result>
+    	</action>
+    </package>
+</struts>

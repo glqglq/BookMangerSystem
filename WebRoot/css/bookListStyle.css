@@ -1,0 +1,9 @@
+.tr-div td {
+	display: inline;
+	overfolow: hidden;
+}
+
+.tr-div {
+	background-color: #000;
+	overfolow: hidden;
+}
